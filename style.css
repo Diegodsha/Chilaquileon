@@ -20,12 +20,195 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+  font-size: 400%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000000;
+}
+
+.carousel-caption h3 {
+  font-size: 170%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+.btn-primary {
+  background-color: rgb(240, 143, 16);
+  border: 1px solid #9d7a06;
+}
+.btn-primary:hover {
+  background-color: rgb(255, 191, 14);
+  border: 1px solid #9d7a06;
+}
+.btn-outline-dark:hover {
+  background-color: rgba(111, 252, 4, 0.998);
+  border: #119105;
+}
+.jumbotron {
+  padding: 1rem;
+  border-radius: 0;
+}
+.padding {
+  padding-bottom: 2rem;
+}
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+.fa-heart {
+  color: #ff0000;
+  animation-name: rainbow-heart;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainbow-heart {
+  0% {
+    color: rgb(224, 6, 6);
+  }
+  40% {
+    color: rgb(250, 178, 9);
+  }
+  70% {
+    color: rgb(66, 224, 8);
+  }
+  100% {
+    color: rgb(224, 6, 6);
+  }
+}
+.dog-icon,
+.virus-icon,
+.fam-icon {
+  margin: 2rem;
+}
+
+.fun {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.gif {
+  max-width: 100%;
+}
+
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-instagram {
+  color: #c1054ae8;
+}
+.fa-tripadvisor {
+  color: #119105;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-tripadvisor:hover {
+  color: #d5d5d5;
+}
+
+footer {
+  background-color: rgb(240, 143, 16);
+  color: #3c3a3a;
+  padding-top: 2rem;
+}
+hr.light {
+  border-top: 1px solid #595757;
+  width: 75%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+footer a {
+  color: #595757;
+  text-decoration: underline;
+}
+hr.light-100 {
+  border-top: 1px solid #595757;
+  width: 100%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+.col-md-4 img {
+  border-radius: 1mm;
+}
 /*---Media Queries --*/
 @media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
 }
-@media (max-width: 768px) {
+@media (max-width: 790px) {
+  .carousel-caption {
+    top: 40%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 300%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 130%;
+    font-weight: 400;
+    padding-bottom: 0.2rem;
+  }
+
+  .carousel-caption .btn {
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+  .display-4 {
+    font-size: 200%;
+  }
+  .social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
 }
-@media (max-width: 576px) {
+@media (max-width: 590px) {
+  .carousel-caption {
+    top: 40%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 250%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 110%;
+  }
+
+  .carousel-caption .btn {
+    font-size: 90%;
+    padding: 4px 8px;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  .display-4 {
+    font-size: 160%;
+  }
+  .social a {
+    font-size: 2em;
+    padding: 0.7rem;
+  }
 }
 
 /*---Firefox Bug Fix --*/
